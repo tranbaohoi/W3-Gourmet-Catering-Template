@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #f44336;
+    --white-color: #fff;
+    --black-color: #000;
+    --h-color: #5f6062;
+    --text-color: #757575;
+    /* --border-color: #dbdbdb; */
+    --icon-color: #666;
+    --btn-color: #f44336;
+    --blur-color: #ccc;
+}
+
+* {
+    box-sizing: inherit;
+    /* ke thua tu the chua no */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Hack */
+    font-size: 62.5%;
+    /* line-height: 1.6rem; */
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: serif;
+    letter-spacing: 5px
+}
+
+.btn:hover {}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.33337%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
